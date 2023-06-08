@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoShop_API", "AutoShop_API\AutoShop_API.csproj", "{4862B43D-3AFA-4D71-B80D-6E3AE169536C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoShop_Dal", "AutoShop_Dal\AutoShop_Dal.csproj", "{6ADE9527-1B5D-453E-B9C3-270C21178485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoShop_Bll", "AutoShop_Bll\AutoShop_Bll.csproj", "{1AB753B0-B470-4511-8944-6178D9E02D02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{E02B78E8-9239-4749-9F90-2FB84CD4AB1B}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4862B43D-3AFA-4D71-B80D-6E3AE169536C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4862B43D-3AFA-4D71-B80D-6E3AE169536C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4862B43D-3AFA-4D71-B80D-6E3AE169536C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4862B43D-3AFA-4D71-B80D-6E3AE169536C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADE9527-1B5D-453E-B9C3-270C21178485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADE9527-1B5D-453E-B9C3-270C21178485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADE9527-1B5D-453E-B9C3-270C21178485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADE9527-1B5D-453E-B9C3-270C21178485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AB753B0-B470-4511-8944-6178D9E02D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AB753B0-B470-4511-8944-6178D9E02D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AB753B0-B470-4511-8944-6178D9E02D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AB753B0-B470-4511-8944-6178D9E02D02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2270F3E8-5942-4CEA-8169-0BB08B69CA4F}
+	EndGlobalSection
+EndGlobal

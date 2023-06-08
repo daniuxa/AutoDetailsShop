@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+ api:
+  image: autoshop_api_image
+  restart: unless-stopped
+  container_name: autoshop_api_container
+  build:
+   context: .
+   dockerfile: AutoShop_API/Dockerfile
+  ports:
+  - "8080:80" 
+  depends_on:
+  - db
+  networks:
+  - autoshop_net
+  environment:
+   - ASPNETCORE_ENVIRONMENT=Release
+ db:
+  image: mcr.microsoft.com/mssql/server:2022-latest
+  container_name: autoshop_db_container
+  ports: 
+  - "1433:1433"
+  environment:
+  - SA_PASSWORD=Password123
+  - ACCEPT_EULA=Y
+  networks:
+  - autoshop_net
+  volumes:
+  - autoshop_db_container:/var/lib/mssql/data
+
+networks:
+ autoshop_net:
+  driver: bridge
+
+volumes:
+  autoshop_db_container:
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+        <link type="text/css" href="css/products.css" rel="stylesheet" />
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <title>Demo</title>
+    </head>
+
+    <body>
+            <header>
+              <nav>
+                <div class="logo"><a href="index.html"><h1>Details store</h1></a>
+                  
+                </div>
+                <div class="cart__counter">
+                  <i class="fa fa-shopping-cart"></i><span id="total__counter">0</span>
+                </div>
+              </nav>
+              <div class="cart">
+                  <div class="cart__items">
+                    <i class="fa fa-window-close cart-close" aria-hidden="true"></i>
+                      <div class="check_out"><h4>Кількість : грн </h4><h4 class="total__cost">0</h4><button class="btn check_out_btn">Замовити</button> </div>
+                  </div>
+              </div>
+              
+            </header>
+      
+            <main>
+            <!-- <h2>Фільтри</h2>
+              <div class="products container">
+              <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="1" />
+                <img src="img/products/filters/1.jfif" alt="" srcset="" id="image" />
+                <h4 class="product__name">Filter1</h4>
+                <h5 class="product__price">грн 90</h5>
+                <div class="btn__add__to__cart">Додати у кошик</div>
+              </div>
+              <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="2" />
+                <img src="img/products/filters/2.jpg" alt="" srcset="" id="image" />
+                <h4 class="product__name">Filter2</h4>
+                <h5 class="product__price">грн 80</h5>
+                <div class="btn__add__to__cart">Додати у кошик</div>
+              </div>
+              <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="3" />
+                <img src="img/products/filters/3.jfif" alt="" srcset="" id="image" />
+                <h4 class="product__name">Filter3</h4>
+                <h5 class="product__price">грн 85</h5>
+                <div class="btn__add__to__cart">Додати у кошик</div>
+              </div>
+              <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="4" />
+                <img src="img/products/filters/4.jfif" alt="" srcset="" id="image" />
+                <h4 class="product__name">Filter4</h4>
+                <h5 class="product__price">грн 90</h5>
+                <div class="btn__add__to__cart">Додати у кошик</div>
+              </div>
+              <div class="product__element">
+                <input type="hidden" name="" id="product__id" value="5" />
+                <img src="img/products/filters/5.jfif" alt="" srcset="" id="image" />
+                <h4 class="product__name">Filter5</h4>
+                <h5 class="product__price">грн 90</h5>
+                <div class="btn__add__to__cart">Додати у кошик</div>
+              </div>
+            </div>
+            <h2>Свічки</h2>
+          <div class="products container">
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="6" />
+              <img src="img/products/carCandles/1.jfif" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки1</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="7" />
+              <img src="img/products/carCandles/2.jpeg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки2</h4>
+              <h5 class="product__price">грн 80</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="8" />
+              <img src="img/products/carCandles/3.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки3</h4>
+              <h5 class="product__price">грн 85</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="9" />
+              <img src="img/products/carCandles/4.jfif" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки4</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="10" />
+              <img src="img/products/carCandles/5.jfif" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки5</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+          </div>
+
+          <h2>Двірники</h2>
+          <div class="products container">
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="11" />
+              <img src="img/products/carWipers/1.webp" alt="" srcset="" id="image" />
+              <h4 class="product__name">Двірники1</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="12" />
+              <img src="img/products/carWipers/2.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Двірники2</h4>
+              <h5 class="product__price">грн 80</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="13" />
+              <img src="img/products/carWipers/3.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Двірники3</h4>
+              <h5 class="product__price">грн 85</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="14" />
+              <img src="img/products/carWipers/4.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Двірники4</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="15" />
+              <img src="img/products/carWipers/5.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Двірники5</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+          </div>
+
+          <h2>Масла</h2>
+          <div class="products container">
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="16" />
+              <img src="img/products/oil/1.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки1</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="17" />
+              <img src="img/products/oil/2.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки2</h4>
+              <h5 class="product__price">грн 80</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="18" />
+              <img src="img/products/oil/3.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки3</h4>
+              <h5 class="product__price">грн 85</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="19" />
+              <img src="img/products/oil/4.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки4</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="20" />
+              <img src="img/products/oil/5.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки5</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+          </div>
+
+          <h2>Колодки</h2>
+          <div class="products container">
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="21" />
+              <img src="img/products/carPads/1.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки1</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="22" />
+              <img src="img/products/carPads/2.jpg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки2</h4>
+              <h5 class="product__price">грн 80</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="23" />
+              <img src="img/products/carPads/3.jpeg" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки3</h4>
+              <h5 class="product__price">грн 85</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="24" />
+              <img src="img/products/carPads/4.png" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки4</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+            <div class="product__element">
+              <input type="hidden" name="" id="product__id" value="25" />
+              <img src="img/products/carPads/5.jfif" alt="" srcset="" id="image" />
+              <h4 class="product__name">Свічки5</h4>
+              <h5 class="product__price">грн 90</h5>
+              <div class="btn__add__to__cart">Додати у кошик</div>
+            </div>
+          </div> -->
+        </main>
+          <footer>
+            <section class="footer">
+                <div class="Information">
+                    <h4>Інформація</h4>
+                    <ul class="list">
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Про магазин</a></li>
+                        <li><a href="#">Оплата та доставка</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="Time">
+                    <h4>Час роботи</h4>
+                    <ul class="list">
+                        <li>м. Київ</li>
+                        <li>пн-нд: 9:00 - 18:00</li>
+                        <li>без перерви</li>
+                    </ul>
+    
+                </div>
+    
+                <div class="Contacts">
+                    <h4>Контакти</h4>
+                    <ul class="list">
+                        <li><a href="tel:5551234567">555 123-45-67</a></li>
+                        <li><a href="tel:5551234568">555 123-45-68</a></li>
+                        <li><a href="tel:5551234569">555 123-45-69</a></li>
+                    </ul>
+                </div>
+    
+                <div class="Social">
+                    <h4>Можеш знайти нас тут</h4>
+                    <div class="footer-icons">
+                        <a href="#"><img class="facebook" src="img/fb_icon_325x325.png"></img></a>
+                        <a href="#"><img class="instagram"
+                                src="https://phonoteka.org/uploads/posts/2021-04/1619706183_1-phonoteka_org-p-znachok-instagram-bez-fona-dlya-fotoshopa-1.png"></img></a>
+                        <a href="#"><img class="youtube"
+                                src="https://styles.redditmedia.com/t5_2qh44/styles/communityIcon_1vctc2ym3zt51.png"></img></a>
+                    </div>
+    
+            </section>
+        </footer>
+        <script src="js/fillSectionsByData.js"></script>
+        <script src="js/cart.js"></script>
+        <script src="js/loadingDataAndCartLogic.js"></script>
+
+    </body>
+</html>
